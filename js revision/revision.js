@@ -188,6 +188,6 @@
   console.log(b);
   console.log(c);
 }
-console.log(a);//give reference error as it cant be accessed outside the block
-console.log(b);
+//console.log(a);//give reference error as it cant be accessed outside the block
+//console.log(b);//give reference error as it cant be accessed outside the block
 console.log(c); 
