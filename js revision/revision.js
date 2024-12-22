@@ -80,3 +80,9 @@ function task(morning){
 task(9);
 task(10);
 task(11);
+
+function vikrant(name){
+  console.log("hello my name is "+name);
+}
+vikrant('vikrant');
+vikrant("mani");
