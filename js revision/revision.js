@@ -62,9 +62,21 @@
 
 
 
-//Arrays
-let arr=[1,2,3,4,5,'vikrant',true];
-console.log(arr);
-console.log(typeof arr);
-console.log(arr[2]);  
-//baasically arrays are also an object only
+// //Arrays
+// let arr=[1,2,3,4,5,'vikrant',true];
+// console.log(arr);
+// console.log(typeof arr);
+// console.log(arr[2]);  
+// //baasically arrays are also an object only
+
+
+
+
+// //Functions
+//creating task again and again
+function task(morning){
+  console.log("wake up at"+morning);
+}
+task(9);
+task(10);
+task(11);
