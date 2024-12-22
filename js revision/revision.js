@@ -203,4 +203,6 @@
 
 
 
-//Lexical scope: loval and global scope
+//Lexical scope: local and global scope
+//Local scope: variables declared inside a function
+//Global scope: variables declared outside a function
