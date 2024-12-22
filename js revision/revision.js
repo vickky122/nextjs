@@ -217,7 +217,7 @@ hello();
 
 function hi(){
   
-  console.log(a);
+  console.log(b);
 }
 let b=100;
 hi();
