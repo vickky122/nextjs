@@ -96,3 +96,41 @@ vikrant('vikrant');
 vikrant("mani");
 let y=20;
 console.log(y);
+
+/*The output stops when let y is used because of the Temporal Dead Zone (TDZ) in JavaScript, which is a behavior specific to let and const declarations.
+
+Explanation:
+Temporal Dead Zone (TDZ):
+
+Variables declared with let and const are not hoisted in the same way as var.
+During the execution, from the start of the block where let y is declared until its actual initialization (let y = 20), the variable exists in a "dead zone." Any attempt to access it before its initialization results in a ReferenceError.
+javascript
+Copy code
+let y = 20; // y is not accessible before this line.
+console.log(y); // This is valid only after this declaration.
+Behavior of var:
+
+Variables declared with var are hoisted to the top of their function or global scope.
+The variable is initialized with undefined until the line where it is explicitly assigned a value.
+javascript
+Copy code
+var y = 20; // y is hoisted and accessible even before this line.
+console.log(y); // Outputs 20 or undefined if accessed before assignment.
+Your Code Behavior:
+When you use let y, the line console.log(y) before the let initialization attempts to access y while it is still in the TDZ, causing a ReferenceError.
+When you replace let with var, y is hoisted and initialized with undefined, allowing the code to proceed without interruption.
+Corrected Code:
+To avoid the error, either declare let y before using it or use var:
+
+javascript
+Copy code
+// Using let correctly:
+let y = 20;
+console.log(y); // Outputs: 20
+Or, with var:
+
+javascript
+Copy code
+var y = 20;
+console.log(y); // Outputs: 20
+*/
