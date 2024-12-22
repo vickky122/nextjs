@@ -180,6 +180,8 @@
 //const, let and var
 // const and let are blocked scoped while var is function scoped
 
+//while initialising with const, let and var, only var is within the global execution context and the rest two are in the temporal dead zone
+
 {
   const a=1;
   let b=2;
