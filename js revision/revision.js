@@ -182,14 +182,25 @@
 
 //while initialising with const, let and var, only var is within the global execution context and the rest two are in the temporal dead zone
 
-{
-  const a=1;
-  let b=2;
-  var c=3;
-  console.log(a);
-  console.log(b);
-  console.log(c);
-}
-//console.log(a);//give reference error as it cant be accessed outside the block
-//console.log(b);//give reference error as it cant be accessed outside the block
-console.log(c); 
+// {
+//   const a=1;
+//   let b=2;
+//   var c=3;
+//   console.log(a);
+//   console.log(b);
+//   console.log(c);
+// }
+// //console.log(a);//give reference error as it cant be accessed outside the block
+// //console.log(b);//give reference error as it cant be accessed outside the block
+// console.log(c); 
+
+
+
+
+
+
+
+
+
+
+//Lexical scope: loval and global scope
