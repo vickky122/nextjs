@@ -203,22 +203,46 @@
 
 
 
-//Lexical scope: local and global scope
-//Local scope: variables declared inside a function
-//Global scope: variables declared outside a function
+// //Lexical scope: local and global scope
+// //Local scope: variables declared inside a function
+// //Global scope: variables declared outside a function
 
-function hello(){
-  let a=10;
-  console.log(a);
-}
-let a=100;
-hello();
-//OUTPUT : 10 , beacuse a is local to hello function
+// function hello(){
+//   let a=10;
+//   console.log(a);
+// }
+// let a=100;
+// hello();
+// //OUTPUT : 10 , beacuse a is local to hello function
 
-function hi(){
+// function hi(){
   
-  console.log(b);
+//   console.log(b);
+// }
+// let b=100;
+// hi();
+// //console.log(a);//output : 100 , beacuse a is global to the whole program
+
+
+
+
+
+
+
+
+//Functinos are called first class citizen in javascript
+function add(a,b){
+  return a+b;
 }
-let b=100;
-hi();
-//console.log(a);//output : 100 , beacuse a is global to the whole program
+
+console.log(add);
+console.log(add(2,3));
+//output:script and global generated fo rthe function
+
+let sum=function(a,b){
+  return a+b;
+}
+
+console.log(sum);
+console.log(sum(2,3));
+//output: local, script and global created for the variables not for the functions 
