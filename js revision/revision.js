@@ -71,7 +71,7 @@
 
 
 
-
+//Hoisting: USing the variables before declaring them
 // //Functions
 //creating task again and again
 function task(morning){
