@@ -153,16 +153,41 @@
 
 
 
-//Window and this
-console.log(a);
-console.log(this.a);
-console.log(window.a);
+// //Window and this
+// console.log(a);
+// console.log(this.a);
+// console.log(window.a);
 
-var a=1;
+// var a=1;
 
-console.log(a);
-console.log(this.a);
-console.log(window.a);
+// console.log(a);
+// console.log(this.a);
+// console.log(window.a);
 
-console.log(window);
-console.log(this === window);
+// console.log(window);
+// console.log(this === window);
+
+
+
+
+
+
+
+
+
+
+//Temporal Dead Zone (TDZ): mainly occur for const and let
+//const, let and var
+// const and let are blocked scoped while var is function scoped
+
+{
+  const a=1;
+  let b=2;
+  var c=3;
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+console.log(a);//give reference error as it cant be accessed outside the block
+console.log(b);
+console.log(c); 
