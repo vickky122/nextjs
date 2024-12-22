@@ -214,3 +214,11 @@ function hello(){
 let a=100;
 hello();
 //OUTPUT : 10 , beacuse a is local to hello function
+
+function hi(){
+  
+  console.log(a);
+}
+let b=100;
+hi();
+//console.log(a);//output : 100 , beacuse a is global to the whole program
