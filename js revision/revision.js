@@ -43,19 +43,28 @@
 // console.log(obj.height);
 
 
-//Value types VS Reference types
-let x="vikrant";  
-let y=x;
+// //Value types VS Reference types
+// let x="vikrant";  
+// let y=x;
 
-x="yadav";
-console.log(x);
-console.log(y); //only value got copied thats why it is known as value types
+// x="yadav";
+// console.log(x);
+// console.log(y); //only value got copied thats why it is known as value types
 
-let p={
-  name:"vikrant",};
-  let q=p;
+// let p={
+//   name:"vikrant",};
+//   let q=p;
 
-  p.name="yadav";
-  console.log(p);
-  console.log(q);
-  //reference got copied by q thats why it is known as reference types
+//   p.name="yadav";
+//   console.log(p);
+//   console.log(q);
+//   //reference got copied by q thats why it is known as reference types
+
+
+
+//Arrays
+let arr=[1,2,3,4,5,'vikrant',true];
+console.log(arr);
+console.log(typeof arr);
+console.log(arr[2]);  
+//baasically arrays are also an object only
