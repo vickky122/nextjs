@@ -81,8 +81,15 @@ task(9);
 task(10);
 task(11);
 
+
+vikrant("yadav");
+console.log(x);
+
+
 function vikrant(name){
   console.log("hello my name is "+name);
 }
+var x=10;
+console.log(x) ;
 vikrant('vikrant');
 vikrant("mani");
