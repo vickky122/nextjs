@@ -28,16 +28,34 @@
 
 
 
-//Referance types- objects, arrays, functions
-//Objects
-let obj={
-  name:"vikrant",
-  age:101,
-  height:5.11
-};
-console.log(obj);
-console.log(typeof obj);
-console.log(obj.name);
-console.log(obj['name']);
-console.log(obj.age);
-console.log(obj.height);
+ //Referance types- objects, arrays, functions
+ //Objects
+// let obj={
+//   name:"vikrant",
+//   age:101,
+//   height:5.11
+// };
+// console.log(obj);
+// console.log(typeof obj);
+// console.log(obj.name);
+// console.log(obj['name']);
+// console.log(obj.age);
+// console.log(obj.height);
+
+
+//Value types VS Reference types
+let x="vikrant";  
+let y=x;
+
+x="yadav";
+console.log(x);
+console.log(y); //only value got copied thats why it is known as value types
+
+let p={
+  name:"vikrant",};
+  let q=p;
+
+  p.name="yadav";
+  console.log(p);
+  console.log(q);
+  //reference got copied by q thats why it is known as reference types
