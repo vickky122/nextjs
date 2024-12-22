@@ -83,7 +83,8 @@ task(11);
 
 
 vikrant("yadav");
-console.log(x);
+console.log(x);//output stops here as let y has been used instead of var
+console.log(y);
 
 
 function vikrant(name){
@@ -93,3 +94,5 @@ var x=10;
 console.log(x) ;
 vikrant('vikrant');
 vikrant("mani");
+let y=20;
+console.log(y);
