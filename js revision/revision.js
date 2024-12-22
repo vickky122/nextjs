@@ -206,3 +206,11 @@
 //Lexical scope: local and global scope
 //Local scope: variables declared inside a function
 //Global scope: variables declared outside a function
+
+function hello(){
+  let a=10;
+  console.log(a);
+}
+let a=100;
+hello();
+//OUTPUT : 10 , beacuse a is local to hello function
