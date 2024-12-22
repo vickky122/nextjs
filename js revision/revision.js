@@ -134,3 +134,15 @@ Copy code
 var y = 20;
 console.log(y); // Outputs: 20
 */
+
+
+
+
+
+//Global Execution Context(GEC)- how js is executed
+//Execution COntext
+//1. Memory Phase :variable environment
+//2. Execution Phase/Code Phase:execution environment
+//3. Result Phase:output
+
+//Global Phase:global environment
