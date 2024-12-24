@@ -338,12 +338,13 @@
 
 let a=10;
 function outer(){
+  a=20;
   function inner(){
     console.log(a);
   }
   return inner;
 }
-
+a=100; //giving output as 20
 let returnedfunction=outer();
 console.log(returnedfunction);
 returnedfunction();
