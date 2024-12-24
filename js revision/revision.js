@@ -388,6 +388,11 @@
 
 //CALLBACKS : i WILL CALL BACK LATER
 // A callback is a function passed as an argument to another function and it will run after some operartion has successfully completely finished like in the balow example setTimeout is being called after 5 seconds and then the callback function will run
+
+//DIFFERENCE BETWEEN EVENT QUEUE AND EVENT LOOP
+// An event loop is an endless loop, which waits for tasks, executes them, and then sleeps until it receives more tasks. The event loop executes tasks from the event queue only when the call stack is empty i.e. there is no ongoing task. The event loop allows us to use callbacks and promises.
+//SO it might possible that the data can take not exactly 5 seconds to load but will take at least 5 seconds to run the callback function.(may take 6,7,... seconds )
+
 // When you pass a function as an argument, remember not to use parenthesis.
 
 // Right: myCalculator(5, 5, myDisplayer);
