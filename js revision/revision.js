@@ -387,7 +387,7 @@
 
 
 //CALLBACKS : i WILL CALL BACK LATER
-// A callback is a function passed as an argument to another function.
+// A callback is a function passed as an argument to another function and it will run after some operartion has successfully completely finished like in the balow example setTimeout is being called after 5 seconds and then the callback function will run
 // When you pass a function as an argument, remember not to use parenthesis.
 
 // Right: myCalculator(5, 5, myDisplayer);
