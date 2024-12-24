@@ -334,3 +334,23 @@
 //lexical scope:we can call another function inside a function
 //Lexical scope + Function = Closure
 // Closure is a combination of Lexical scope and Function in which a function has access to the variables of its parent function
+
+
+let a=10;
+function outer(){
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * Logs the value of the variable `a` of the parent scope to the console.
+ * Has access to the variables of its parent scope due to lexical scoping.
+ * Is a closure because it is a function that has access to the variables of its parent scope.
+ */
+/******  f965d8c2-957b-46a1-9e11-54f196bcb324  *******/
+  function inner(){
+    console.log(a);
+  }
+  return inner;
+}
+
+let returnedfunction=outer();
+console.log(returnedfunction);
+returnedfunction();
