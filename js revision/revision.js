@@ -444,6 +444,8 @@ asyncoperation1(args,(result1)=>{
     });
   });
 });
-//such type of consition known as CALLBACK HELL/ PYRAMID OF DOOM
+//such type of consition known as CALLBACK HELL/ PYRAMID OF DOOM 
+//also known as INVERSION OF CONTROL as we can not control it
+//to solve this problem we use PROMISES
 
 
