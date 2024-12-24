@@ -270,3 +270,5 @@ console.log(operate(multiply,2,3));
 
 //ALl functions in javascript are first class citizen
 //Higher order functions- functions that take other functions as parameters or return functions
+
+//here operate is a higher order function because it takes another function as a parameter
