@@ -485,6 +485,8 @@ getData()
           console.error(error);
         })
 
+//async and await is being used in place of then method as it is efficienter than then method
+
 
 
 
