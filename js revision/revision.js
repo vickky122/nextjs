@@ -291,23 +291,34 @@
 
 
 
-//ARROW FUNCTION
-let sum=(a,b) => {
-  return a+b;
-}
+//ARROW FUNCTION initial thought process
+// let sum=(a,b) => {
+//   return a+b;
+// }
 
-let diff=(a,b)=>{
-  return a-b;
-}
+// let diff=(a,b)=>{
+//   return a-b;
+// }
 
-let multiply=(a,b)=>{
-  return a*b;
-}
+// let multiply=(a,b)=>{
+//   return a*b;
+// }
 
-function operate(operatefunct,a,b){
-  return operatefunct(a,b);
-}
+// function operate(operatefunct,a,b){
+//   return operatefunct(a,b);
+// }
 
-console.log(operate(sum,2,3));
-console.log(operate(diff,2,3));
-console.log(operate(multiply,2,3));
+// console.log(operate(sum,2,3));
+// console.log(operate(diff,2,3));
+// console.log(operate(multiply,2,3));
+
+//arrow function final implementation
+let sum=(a,b)=>a+b;
+let diff=(a,b)=>a-b;
+let multiply=(a,b)=>a*b;
+
+// function operate=(func,a,b)=> func(a,b);
+
+console.log(sum(2,3));
+console.log(diff(2,3)); 
+console.log(multiply(2,3));
