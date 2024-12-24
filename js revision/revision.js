@@ -399,22 +399,50 @@
 
 // Wrong: myCalculator(5, 5, myDisplayer());
 
-function fetchdata(callback){
-  setTimeout(()=>{
-    let data="some data";
-    callback(data,null);
-  },5000);
-}
+// function fetchdata(callback){
+//   setTimeout(()=>{
+//     let data="some data";
+//     callback(data,null);
+//   },5000);
+// }
 
-function handleData(data,err){
-  if(err){
-    console.log(err);
-  }else{
-    console.log(data);
-  }
-}
+// function handleData(data,err){
+//   if(err){
+//     console.log(err);
+//   }else{
+//     console.log(data);
+//   }
+// }
 
-console.log("fetching data");
-fetchdata(handleData);
+// console.log("fetching data");
+// fetchdata(handleData);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//PROBLEM IN USING CALLBACKS : the event will keep on running like in the below and we will stuck in that state and sometimes it is very hard t figure out such problems
+asyncoperation1(args,(result1)=>{
+  asynoperation2(result1,(result2)=>{
+    asyncoperation3(result2,(result3)=>{
+      //and so on
+    });
+  });
+});
 
 
