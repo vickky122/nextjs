@@ -346,5 +346,6 @@ function outer(){
 }
 a=100; //giving output as 20
 let returnedfunction=outer();
+a=200; // now giving 200
 console.log(returnedfunction);
 returnedfunction();
