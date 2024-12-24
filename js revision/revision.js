@@ -449,3 +449,19 @@ asyncoperation1(args,(result1)=>{
 //to solve this problem we use PROMISES
 
 
+
+
+
+
+
+
+
+
+
+
+
+//PROMISES: it actually handles the state of an asynchronous operation that represents whethere the state is in the pending, fullfilled or rejected
+//promise is a javascript object that represents the eventual completion or failure of an asynchronous operation
+
+
+
