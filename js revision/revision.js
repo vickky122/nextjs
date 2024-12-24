@@ -312,13 +312,25 @@
 // console.log(operate(diff,2,3));
 // console.log(operate(multiply,2,3));
 
-//arrow function final implementation
-let sum=(a,b)=>a+b;
-let diff=(a,b)=>a-b;
-let multiply=(a,b)=>a*b;
+// //arrow function final implementation
+// let sum=(a,b)=>a+b;
+// let diff=(a,b)=>a-b;
+// let multiply=(a,b)=>a*b;
 
-// function operate=(func,a,b)=> func(a,b);
+// // function operate=(func,a,b)=> func(a,b);
 
-console.log(sum(2,3));
-console.log(diff(2,3)); 
-console.log(multiply(2,3));
+// console.log(sum(2,3));
+// console.log(diff(2,3)); 
+// console.log(multiply(2,3));
+
+
+
+
+
+
+
+
+
+//lexical scope:we can call another function inside a function
+//Lexical scope + Function = Closure
+// Closure is a combination of Lexical scope and Function in which a function has access to the variables of its parent function
