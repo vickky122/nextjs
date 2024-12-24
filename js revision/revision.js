@@ -467,36 +467,50 @@
 //Problem of asynchronous operation is being solved by promises and it =has then and catch methods which is used to handle the state of the promise and also which event is being going to handle after this certain operation.
 //like in swiggy payment then notificatino then the order will be delivered
 
-function getData(){
-  return new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-      let data="some data";
-      resolve(data);
-      //reject("error captured");
-    },5000);
-  })
-}
+// function getData(){
+//   return new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//       let data="some data";
+//       resolve(data);
+//       //reject("error captured");
+//     },5000);
+//   })
+// }
 
-// getData()
-//         .then(result=>{
-//           console.log(result);
-//         })
-//         .catch(error=>{
-//           console.error(error);
-//         })
+// // getData()
+// //         .then(result=>{
+// //           console.log(result);
+// //         })
+// //         .catch(error=>{
+// //           console.error(error);
+// //         })
 
-async function fetchData(){
-  try{
-    const result=await getData();
-    console.log(result);
-  }catch(error){
-    console.error(error);
-  }
-}
-fetchData();
+// async function fetchData(){
+//   try{
+//     const result=await getData();
+//     console.log(result);
+//   }catch(error){
+//     console.error(error);
+//   }
+// }
+// fetchData();
 
 //async and await is being used in place of then method as it is efficienter than then method which contain try and catch method which handles the state of the promise and also throw the error if we get something in it
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+//HIGHER ORDER FUNCTIONS : functions that take other functions as parameters or return functions
+// 1. map()
+// 2. filter()
+// 3. reduce()
