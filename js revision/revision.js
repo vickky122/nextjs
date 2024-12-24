@@ -230,19 +230,40 @@
 
 
 
-//Functinos are called first class citizen in javascript
-function add(a,b){
+// //Functinos are called first class citizen in javascript
+// function add(a,b){
+//   return a+b;
+// }
+
+// console.log(add);
+// console.log(add(2,3));
+// //output:script and global generated fo rthe function
+
+// let sum=function(a,b){
+//   return a+b;
+// }
+
+// console.log(sum);
+// console.log(sum(2,3));
+// //output: local, script and global created for the variables not for the functions 
+
+
+function sum(a,b){
   return a+b;
 }
 
-console.log(add);
-console.log(add(2,3));
-//output:script and global generated fo rthe function
-
-let sum=function(a,b){
-  return a+b;
+function diff(a,b ){
+  return a-b;
 }
 
-console.log(sum);
-console.log(sum(2,3));
-//output: local, script and global created for the variables not for the functions 
+function multiply(a,b){
+  return a*b;
+}
+
+function operate(operatefunct,a,b){
+  return operatefunct(a,b);
+}
+
+console.log(operate(sum,2,3));
+console.log(operate(diff,2,3));
+console.log(operate(multiply,2,3));
