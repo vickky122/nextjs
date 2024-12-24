@@ -514,3 +514,9 @@
 // 1. map()
 // 2. filter()
 // 3. reduce()
+
+//1.MAp
+const nums=[1,2,3,4,5];;
+console.log(nums);
+const newnums= nums.map((num)=> 2*num); 
+console.log(newnums);
