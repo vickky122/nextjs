@@ -485,7 +485,7 @@ getData()
           console.error(error);
         })
 
-//async and await is being used in place of then method as it is efficienter than then method
+//async and await is being used in place of then method as it is efficienter than then method which contain try and catch method which handles the state of the promise and also throw the error if we get something in it
 
 
 
