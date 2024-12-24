@@ -248,15 +248,59 @@
 // //output: local, script and global created for the variables not for the functions 
 
 
-function sum(a,b){
+// function sum(a,b){
+//   return a+b;
+// }
+
+// function diff(a,b ){
+//   return a-b;
+// }
+
+// function multiply(a,b){
+//   return a*b;
+// }
+
+// function operate(operatefunct,a,b){
+//   return operatefunct(a,b);
+// }
+
+// console.log(operate(sum,2,3));
+// console.log(operate(diff,2,3));
+// console.log(operate(multiply,2,3));
+
+//ALl functions in javascript are first class citizen
+//Higher order functions- functions that take other functions as parameters or return functions
+
+//here operate is a higher order function because it takes another function as a parameter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//ARROW FUNCTION
+let sum=(a,b) => {
   return a+b;
 }
 
-function diff(a,b ){
+let diff=(a,b)=>{
   return a-b;
 }
 
-function multiply(a,b){
+let multiply=(a,b)=>{
   return a*b;
 }
 
@@ -267,8 +311,3 @@ function operate(operatefunct,a,b){
 console.log(operate(sum,2,3));
 console.log(operate(diff,2,3));
 console.log(operate(multiply,2,3));
-
-//ALl functions in javascript are first class citizen
-//Higher order functions- functions that take other functions as parameters or return functions
-
-//here operate is a higher order function because it takes another function as a parameter
