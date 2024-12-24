@@ -365,3 +365,31 @@ increment();
 increment();
 increment();
 //we should use closure when we want to call a function inside another function and it should be limited beacuse a lot of memory leaks can occur and it leads to performance issues
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//CALLBACKS : i WILL CALL BACK LATER
+// A callback is a function passed as an argument to another function.
+// When you pass a function as an argument, remember not to use parenthesis.
+
+// Right: myCalculator(5, 5, myDisplayer);
+
+// Wrong: myCalculator(5, 5, myDisplayer());
