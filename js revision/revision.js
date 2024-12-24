@@ -351,19 +351,19 @@
 // returnedfunction();
 
 //closure example
-function outer(){
-  let count=0;
-  function inner(){
-    count++;
-    console.log(count);
-  }
-  return inner;
-} 
+// function outer(){
+//   let count=0;
+//   function inner(){
+//     count++;
+//     console.log(count);
+//   }
+//   return inner;
+// } 
 
-let increment=outer();
-increment();
-increment();
-increment();
+// let increment=outer();
+// increment();
+// increment();
+// increment();
 //we should use closure when we want to call a function inside another function and it should be limited beacuse a lot of memory leaks can occur and it leads to performance issues
 
 
@@ -393,3 +393,23 @@ increment();
 // Right: myCalculator(5, 5, myDisplayer);
 
 // Wrong: myCalculator(5, 5, myDisplayer());
+
+function fetchdata(callback){
+  setTimeout(()=>{
+    let data="some data";
+    callback(data,null);
+  },5000);
+}
+
+function handleData(data,err){
+  if(err){
+    console.log(err);
+  }else{
+    console.log(data);
+  }
+}
+
+console.log("fetching data");
+fetchdata(handleData);
+
+
