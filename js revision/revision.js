@@ -350,7 +350,7 @@
 // console.log(returnedfunction);
 // returnedfunction();
 
-//closoure example
+//closure example
 function outer(){
   let count=0;
   function inner(){
@@ -364,3 +364,4 @@ let increment=outer();
 increment();
 increment();
 increment();
+//we should use closure when we want to call a function inside another function and it should be limited beacuse a lot of memory leaks can occur and it leads to performance issues
