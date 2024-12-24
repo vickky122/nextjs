@@ -336,16 +336,31 @@
 // Closure is a combination of Lexical scope and Function in which a function has access to the variables of its parent function
 
 
-let a=10;
+// let a=10;
+// function outer(){
+//   a=20;
+//   function inner(){
+//     console.log(a);
+//   }
+//   return inner;
+// }
+// a=100; //giving output as 20
+// let returnedfunction=outer();
+// a=200; // now giving 200
+// console.log(returnedfunction);
+// returnedfunction();
+
+//closoure example
 function outer(){
-  a=20;
+  let count=0;
   function inner(){
-    console.log(a);
+    count++;
+    console.log(count);
   }
   return inner;
-}
-a=100; //giving output as 20
-let returnedfunction=outer();
-a=200; // now giving 200
-console.log(returnedfunction);
-returnedfunction();
+} 
+
+let increment=outer();
+increment();
+increment();
+increment();
