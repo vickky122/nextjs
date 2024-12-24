@@ -460,10 +460,12 @@ asyncoperation1(args,(result1)=>{
 
 
 
-//PROMISES: it actually handles the state of an asynchronous operation that represents whethere the state is in the pending, fullfilled or rejected
+//PROMISES: Promises are the objects and it actually handles the state of an asynchronous operation that represents whethere the state is in the pending, fullfilled or rejected
 //promise is a javascript object that represents the eventual completion or failure of an asynchronous operation
 
 //3 states: pending, fullfilled and rejected
+//Problem of asynchronous operation is being solved by promises and it =has then and catch methods which is used to handle the state of the promise and also which event is being going to handle after this certain operation.
+//like in swiggy payment then notificatino then the order will be delivered
 
 
 
