@@ -537,3 +537,10 @@ const news=n.filter((num)=>2*num); // [20,21,22,24,32] - same output
 //const news=n.map((num)=>2*num); // [40,42,44,48,64]
 console.log(news);
 
+//3.reduce
+
+const nums2=[1,2,3,4,5];
+console.log(nums2);
+const newnums2=nums2.reduce((num1,num2)=>num1+num2);
+console.log(newnums2);
+
