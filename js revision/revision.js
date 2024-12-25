@@ -531,4 +531,9 @@ console.log(newnums1);
 //filter is used to filter out the data and map is used to modify the data.
 // filter in simple term refers to the data which we want to keep and map refers to the data which we want to modify
 
+const n=[20,21,22,24,32];
+console.log(n);
+const news=n.filter((num)=>2*num); // [20,21,22,24,32] - same output
+//const news=n.map((num)=>2*num); // [40,42,44,48,64]
+console.log(news);
 
