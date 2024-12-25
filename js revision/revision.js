@@ -520,3 +520,11 @@ const nums=[1,2,3,4,5];;
 console.log(nums);
 const newnums= nums.map((num)=> 2*num); 
 console.log(newnums);
+
+//2.filter
+
+const nums1=[1,2,3,4,5];
+console.log(nums1);
+const newnums1=nums1.filter((num)=>num%2==0);
+console.log(newnums1);
+
