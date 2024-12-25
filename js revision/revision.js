@@ -528,3 +528,7 @@ console.log(nums1);
 const newnums1=nums1.filter((num)=>num%2==0);
 console.log(newnums1);
 
+//filter is used to filter out the data and map is used to modify the data.
+// filter in simple term refers to the data which we want to keep and map refers to the data which we want to modify
+
+
