@@ -544,3 +544,5 @@ console.log(nums2);
 const newnums2=nums2.reduce((num1,num2)=>num1+num2);
 console.log(newnums2);
 
+//reduce is used to reduce the data to a single value and map and filter are used to modify the data
+
